@@ -1,0 +1,94 @@
+* { box-sizing: border-box; }
+body { font-family: Arial, sans-serif; margin: 0; padding: 20px; min-height: 100vh;
+       background: linear-gradient(135deg, #667eea, #764ba2); }
+.container { max-width: 720px; margin: 0 auto 20px; background: #fff; border-radius: 10px; overflow: hidden; }
+.container.lebar { max-width: 960px; }
+.header { background: #7c52c8; color: #fff; text-align: center; padding: 18px 10px; }
+.header h1 { margin: 0; font-size: 24px; letter-spacing: 1px; }
+.header p { margin: 6px 0 0; font-size: 13px; }
+.header .pill { display: inline-block; margin-top: 10px; padding: 6px 14px; background: #fff; color: #7c52c8;
+                border-radius: 20px; font-size: 13px; text-decoration: none; font-weight: bold; }
+.content { padding: 25px 30px; }
+h2 { color: #2d3a4a; font-size: 20px; text-align: center; }
+h3 { color: #2d3a4a; font-size: 18px; }
+table { width: 100%; border-collapse: collapse; }
+input, select { width: 100%; padding: 9px; border: 1px solid #c9b8ee; border-radius: 6px; font-size: 14px; background: #fff; }
+button, .btn { background: #7c52c8; color: #fff; border: 0; padding: 10px 20px; border-radius: 6px; font-size: 14px;
+               cursor: pointer; text-decoration: none; display: inline-block; }
+button:hover, .btn:hover { background: #6840b0; }
+.btn-abu { background: #888; } .btn-abu:hover { background: #666; }
+.btn-merah { background: #d9534f; } .btn-merah:hover { background: #b52b27; }
+.btn-kecil { padding: 6px 12px; font-size: 13px; }
+.error { background: #ffe5e5; color: #b00020; padding: 10px; border-radius: 6px; margin-bottom: 15px; text-align: center; }
+.sukses { background: #e3f7e8; color: #1b6e32; padding: 10px; border-radius: 6px; margin-bottom: 15px; text-align: center; }
+
+/* Form kasir */
+.form-table td { background: #f8f7fd; border: 1px solid #e5e0f5; padding: 8px; font-size: 14px; }
+.form-table td:first-child { width: 28%; }
+.item-table th { background: #ece8fa; color: #5b3a9e; text-align: left; padding: 10px 8px; font-size: 14px; }
+.item-table td { background: #f8f7fd; border: 1px solid #e5e0f5; padding: 8px; }
+.item-table input { text-align: right; }
+.btn-wrap { text-align: center; margin-top: 20px; }
+.live { background: #f3effc; border: 1px dashed #b9a2e8; border-radius: 8px; padding: 10px 15px; margin-top: 15px; font-size: 14px; }
+.live div { display: flex; justify-content: space-between; padding: 3px 0; }
+.live .tot { font-weight: bold; color: #5b3a9e; border-top: 1px solid #d5c8f2; margin-top: 4px; padding-top: 6px; }
+
+/* Tabel admin */
+.tabel th { background: #ece8fa; color: #5b3a9e; text-align: left; padding: 10px 8px; font-size: 14px; }
+.tabel td { border: 1px solid #e5e0f5; padding: 7px 8px; font-size: 14px; }
+.tabel td input { padding: 6px; }
+.menu { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; justify-content: center; }
+.menu a { padding: 8px 16px; border-radius: 6px; background: #ece8fa; color: #5b3a9e; text-decoration: none; font-size: 14px; }
+.menu a.aktif { background: #7c52c8; color: #fff; }
+.filter { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 15px; }
+.filter input { width: auto; flex: 1; min-width: 130px; }
+.tambah { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 15px; }
+.tambah input { width: auto; flex: 1; min-width: 130px; }
+.scroll { overflow-x: auto; }
+.right { text-align: right !important; }
+
+/* Login */
+.login-box { max-width: 380px; margin: 60px auto; background: #fff; border-radius: 10px; overflow: hidden; }
+.login-box label { display: block; margin: 12px 0 5px; font-size: 14px; }
+
+/* Nota */
+.nota { border: 1px solid #ddd; border-radius: 12px; background: #fbfaff; padding: 25px; }
+.nota .judul { text-align: center; color: #7c52c8; font-size: 20px; font-weight: bold; }
+.nota .sub { text-align: center; font-size: 13px; padding-bottom: 12px; border-bottom: 2px dashed #ccc; margin: 10px 0 15px; }
+.nota .info { line-height: 1.3; font-size: 16px; }
+.nota .detail { margin-top: 15px; }
+.nota .detail th { background: #ece8fa; color: #5b3a9e; text-align: left; padding: 9px 8px; font-size: 13px; }
+.nota .detail td { border: 1px solid #e5e0f5; padding: 9px 8px; font-size: 13px; }
+.ringkasan { margin: 15px 10px 0 auto; width: 55%; font-size: 13px; }
+.ringkasan td { padding: 7px 8px; }
+.ringkasan td:first-child { text-align: right; font-weight: bold; }
+.ringkasan td:last-child { text-align: right; }
+.terima-kasih { text-align: center; font-style: italic; color: #777; margin-top: 20px; font-size: 15px; }
+
+/* Pop up */
+.modal { display: none; position: fixed; inset: 0; background: rgba(0,0,0,.55); z-index: 100;
+         align-items: center; justify-content: center; padding: 15px; }
+.modal.show { display: flex; }
+.modal-box { background: #fff; border-radius: 12px; padding: 15px; max-width: 640px; width: 100%; max-height: 92vh; overflow-y: auto; }
+.modal-btn { text-align: center; margin-top: 12px; display: flex; gap: 10px; justify-content: center; }
+
+/* Responsif */
+@media (max-width: 600px) {
+    body { padding: 10px; }
+    .content { padding: 15px; }
+    .header h1 { font-size: 18px; }
+    .nota { padding: 15px; }
+    .nota .info { font-size: 14px; }
+    .nota .detail { display: block; overflow-x: auto; }
+    .ringkasan { width: 100%; margin: 15px 0 0; }
+    .form-table td:first-child { width: 35%; font-size: 13px; }
+    .item-table th:last-child { width: 30%; }
+}
+
+/* Cetak: hanya nota yang tercetak */
+@media print {
+    body * { visibility: hidden; }
+    #areaNota, #areaNota * { visibility: visible; }
+    #areaNota { position: absolute; left: 0; top: 0; width: 100%; }
+    .modal, .modal-box { position: static; overflow: visible; max-height: none; }
+}

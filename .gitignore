@@ -1,0 +1,21 @@
+# Konfigurasi lokal & rahasia (JANGAN di-commit)
+config.php
+.env
+.env.*
+!.env.example
+
+# Log, backup, dan dump database asli
+*.log
+*.bak
+*.zip
+backup/
+
+# Dependensi (kalau suatu saat ada)
+vendor/
+node_modules/
+
+# Editor & OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
